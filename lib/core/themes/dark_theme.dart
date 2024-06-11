@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_in/core/themes/colors.dart';
 
 abstract class DarkTheme {
   static ThemeData get theme {
@@ -9,44 +11,11 @@ abstract class DarkTheme {
         color: Colors.black,
         iconTheme: IconThemeData(color: Colors.white),
       ),
-      textTheme: const TextTheme(
-        headline1: TextStyle(
-          color: Colors.white,
-          fontSize: 24.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline2: TextStyle(
-          color: Colors.white,
-          fontSize: 22.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline3: TextStyle(
-          color: Colors.white,
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline4: TextStyle(
-          color: Colors.white,
-          fontSize: 18.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline5: TextStyle(
-          color: Colors.white,
-          fontSize: 16.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline6: TextStyle(
-          color: Colors.white,
-          fontSize: 14.0,
-          fontWeight: FontWeight.bold,
-        ),
-        bodyText1: TextStyle(
-          color: Colors.white,
-          fontSize: 16.0,
-        ),
-        bodyText2: TextStyle(
-          color: Colors.white,
-          fontSize: 14.0,
+      textTheme: TextTheme(
+        titleMedium: TextStyle(
+          fontSize: 24.sp,
+          fontWeight: FontWeight.w500,
+          color: AppColors.white,
         ),
       ),
     );

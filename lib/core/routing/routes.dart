@@ -1,3 +1,4 @@
 abstract class Routes {
-  static const onBoarding = '/onBoarding';
+  static const String onBoarding = '/onBoarding';
+  static const String  login = '/onBoarding';
 }

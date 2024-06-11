@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_in/core/themes/dark_theme.dart';
 import 'package:food_in/core/themes/light_theme.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'generated/l10n.dart';
 
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
@@ -19,6 +21,14 @@ class FoodIn extends StatelessWidget {
         builder: (context, value, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
+            locale: const Locale('ar'),
+            localizationsDelegates: const [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
             themeMode: ThemeController.instance.getTheme(),
             theme: LightTheme.theme,
             darkTheme: DarkTheme.theme,

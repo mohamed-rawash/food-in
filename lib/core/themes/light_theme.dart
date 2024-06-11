@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'colors.dart';
 
 abstract class LightTheme {
   static ThemeData get theme {
@@ -17,44 +20,11 @@ abstract class LightTheme {
         color: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
       ),
-      textTheme: const TextTheme(
-        headline1: TextStyle(
-          color: Colors.black,
-          fontSize: 24.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline2: TextStyle(
-          color: Colors.black,
-          fontSize: 22.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline3: TextStyle(
-          color: Colors.black,
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline4: TextStyle(
-          color: Colors.black,
-          fontSize: 18.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline5: TextStyle(
-          color: Colors.black,
-          fontSize: 16.0,
-          fontWeight: FontWeight.bold,
-        ),
-        headline6: TextStyle(
-          color: Colors.black,
-          fontSize: 14.0,
-          fontWeight: FontWeight.bold,
-        ),
-        bodyText1: TextStyle(
-          color: Colors.black,
-          fontSize: 16.0,
-        ),
-        bodyText2: TextStyle(
-          color: Colors.black,
-          fontSize: 14.0,
+      textTheme: TextTheme(
+        titleMedium: TextStyle(
+          fontSize: 24.sp,
+          fontWeight: FontWeight.w500,
+          color: AppColors.black,
         ),
       ),
     );
